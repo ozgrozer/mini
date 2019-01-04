@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Neural Network Recognize Color Contrast</title>
+  <link rel="stylesheet" href="index.css?v=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <script src="brain.min.js"></script>
+</head>
+<body>
+  <div>Which one can you read more easily?</div>
+
+  <div class="squares">
+    <div id="square1" class="square light hover mt-40 ml-40">THIS ONE</div>
+    <div id="square2" class="square dark hover mt-40 ml-40">THIS ONE</div>
+  </div>
+
+  <button id="trainNeuralNetwork" class="mt-40" disabled="disabled">Train Neural Network with <span id="countDataPoints">0</span> Data Points</button>
+
+  <div class="mt-10 mb-40 c-999">More selections make the network more smarter</div>
+
+  <hr />
+
+  <div class="mt-40">RESULT WITH <span id="resultWithXDataPoints">0</span> DATA POINTS</div>
+
+  <div class="squares">
+    <div id="square3" class="square light mt-40 ml-40">
+      <div class="dark">DARK: 0.00%</div>
+      <div class="light">LIGHT: 0.00%</div>
+    </div>
+    <div id="square4" class="square light mt-40 ml-40">
+      <div class="dark">DARK: 0.00%</div>
+      <div class="light">LIGHT: 0.00%</div>
+    </div>
+    <div id="square5" class="square light mt-40 ml-40">
+      <div class="dark">DARK: 0.00%</div>
+      <div class="light">LIGHT: 0.00%</div>
+    </div>
+    <div id="square6" class="square light mt-40 ml-40">
+      <div class="dark">DARK: 0.00%</div>
+      <div class="light">LIGHT: 0.00%</div>
+    </div>
+    <div id="square7" class="square light mt-40 ml-40">
+      <div class="dark">DARK: 0.00%</div>
+      <div class="light">LIGHT: 0.00%</div>
+    </div>
+    <div id="square8" class="square light mt-40 ml-40">
+      <div class="dark">DARK: 0.00%</div>
+      <div class="light">LIGHT: 0.00%</div>
+    </div>
+    <div id="square9" class="square light mt-40 ml-40">
+      <div class="dark">DARK: 0.00%</div>
+      <div class="light">LIGHT: 0.00%</div>
+    </div>
+    <div id="square10" class="square light mt-40 ml-40">
+      <div class="dark">DARK: 0.00%</div>
+      <div class="light">LIGHT: 0.00%</div>
+    </div>
+  </div>
+
+  <button id="randomizeColors" class="mt-40" disabled="disabled">Randomize Colors</button>
+
+  <script src="index.js?v=1"></script>
+</body>
+</html>
