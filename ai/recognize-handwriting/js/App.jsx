@@ -1,5 +1,7 @@
 const React = window.React
 
+let net
+
 let _canvas = [
   { letter: 'A', squares: { 'l00': {}, 'l01': {}, 'l02': {} } },
   { letter: 'B', squares: { 'l10': {}, 'l11': {}, 'l12': {} } }
@@ -15,10 +17,12 @@ const ucfirst = (text) => {
 
 const App = () => {
   const [guessResult, setGuessResult] = React.useState(null)
-  const [network, setNetwork] = React.useState(null)
+  const [train, setTrain] = React.useState(null)
   const [networkIsTraining, setNetworkIsTraining] = React.useState(false)
   const [trainingCompleted, setTrainingCompleted] = React.useState(null)
   const [canvas, setCanvas] = React.useState(_canvas)
+  /* const [iterations, setIterations] = React.useState(100)
+  const [errorThreshold, setErrorThreshold] = React.useState(0.005) */
 
   const _trainingCompleted = () => {
     setNetworkIsTraining(false)
@@ -34,7 +38,7 @@ const App = () => {
         const input = drawable.getVector()
         const output = { [item1.letter]: 1 }
 
-        if (input.indexOf(1)) {
+        if (input.indexOf(1) !== -1) {
           data.push({ input: input, output: output })
         }
       })
@@ -44,21 +48,28 @@ const App = () => {
 
     if (window.Worker) {
       const worker = new window.Worker('./js/worker.js')
-      worker.postMessage(JSON.stringify(data))
+      worker.postMessage(JSON.stringify({
+        data: data,
+        iterations: 1000,
+        errorThreshold: 0.005
+      }))
       worker.onmessage = (e) => {
         const data = JSON.parse(e.data)
 
         if (data.type === 'result') {
-          const train = new window.brain.NeuralNetwork().fromJSON(data.net)
-          setNetwork(train)
+          net = new window.brain.NeuralNetwork().fromJSON(data.net)
+          setTrain(data.train)
 
           _trainingCompleted()
         }
       }
     } else {
-      const net = new window.brain.NeuralNetwork()
-      const train = net.train(data, { iterations: 50, log: false })
-      setNetwork(train)
+      net = new window.brain.NeuralNetwork()
+      const train = net.train(data, {
+        iterations: 1000,
+        errorThreshold: 0.005
+      })
+      setTrain(train)
 
       _trainingCompleted()
     }
@@ -76,8 +87,9 @@ const App = () => {
   }
 
   const guess = () => {
-    const run = network.run(drawAndGuess.getVector())
-    const likely = window.brain.likely(drawAndGuess.getVector(), network)
+    const run = net.run(drawAndGuess.getVector())
+    const likely = window.brain.likely(drawAndGuess.getVector(), net)
+
     drawAndGuess.reset()
 
     const result = 'It\'s ' + likely + '.' + '\n' + JSON.stringify(run, null, 2)
@@ -114,6 +126,13 @@ const App = () => {
       })
     }, 100)
   }
+
+  /* const changeIterations = (e) => {
+    setIterations(e.target.value)
+  }
+  const changeErrorThreshold = (e) => {
+    setErrorThreshold(e.target.value)
+  } */
 
   return (
     <React.Fragment>
@@ -174,6 +193,18 @@ const App = () => {
       <div className='section'>
         <div className='title'>2. Train neural network.</div>
 
+        {/* <div className='mt-20 trainingOptions'>
+          <div>
+            <label htmlFor='iterations'>Iterations</label><br />
+            <input type='text' id='iterations' className='form-control' value={iterations} onChange={changeIterations} />
+          </div>
+
+          <div className='mt-10'>
+            <label htmlFor='errorThreshold'>Error Threshold</label><br />
+            <input type='text' id='errorThreshold' className='form-control' value={errorThreshold} onChange={changeErrorThreshold} />
+          </div>
+        </div> */}
+
         <button
           onClick={trainNeuralNetwork}
           className={'btn btn-primary btn-lg mt-20' + (networkIsTraining ? ' disabled' : '')}>
@@ -185,6 +216,13 @@ const App = () => {
               : 'TRAIN NEURAL NETWORK'
           }
         </button>
+
+        {trainingCompleted ? (
+          <div className='mt-20'>
+            Error: {train.error}<br />
+            Iterations: {train.iterations}
+          </div>
+        ) : null}
 
         <div className='description mt-20'>
           {
