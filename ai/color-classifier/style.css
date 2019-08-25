@@ -20,7 +20,6 @@ html, body, section {
 section {
   float: left;
   width: 33.33%;
-  padding: 20px;
   overflow-y: auto;
   text-align: center;
   border-left: 1px solid var(--border-color);
@@ -30,11 +29,14 @@ section:first-child {
 }
 
 .sectionTitle {
+  padding: 30px;
   font-size: 30px;
+  color: var(--border-color);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .sectionContent {
-  margin-top: 40px;
+  padding: 30px;
 }
 
 .showColor {
@@ -43,13 +45,6 @@ section:first-child {
   display: inline-block;
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
-}
-
-.classifyButtonWrapper {
-  margin-top: 10px;
-}
-.classifyButtonWrapper:first-child {
-  margin-top: 20px;
 }
 
 .classifyButton {
@@ -62,6 +57,7 @@ section:first-child {
 
 .mt-10 { margin-top: 10px; }
 .mt-20 { margin-top: 20px; }
+.mt-40 { margin-top: 40px; }
 
 button {
   color: #fff;
