@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>color classifier</title>
-  <link rel="stylesheet" href="./style.css?v=3" />
+  <link rel="stylesheet" href="./style.css?v=4" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 </head>
 <body>
@@ -11,7 +11,7 @@
     <div class="sectionTitle">1. Classify</div>
 
     <div class="sectionContent">
-      <div class="showColor"></div>
+      <div id="showColor"></div>
 
       <div class="classifyColors">
         <div class="mt-20">
@@ -19,6 +19,7 @@
             Skip
           </button>
         </div>
+
         <div class="mt-10">
           <button
             data-color="red-ish"
@@ -98,16 +99,38 @@
 
     <div class="sectionContent">
       <div>
-        <button class="trainData crb">
+        <button
+          class="crb"
+          id="trainData">
           Train
         </button>
       </div>
 
       <div>
-        <button class="trainWithExampleData crb mt-10">
+        <button
+          class="crb mt-10"
+          id="trainWithExampleData">
           Train with Example Data
         </button>
       </div>
+    </div>
+
+    <div class="sectionContent">
+      <table id="trainResults">
+        <thead>
+          <tr>
+            <th>Epoch</th>
+            <th>Loss</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>...</td>
+            <td>...</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
@@ -118,20 +141,16 @@
       <input
         type="color"
         value="#e66465"
-        class="colorWillPredict" />
-
-      <div class="selectedColor mt-20">#e66465</div>
+        id="colorWillPredict" />
 
       <div class="mt-20">
-        <div id="epoch">epoch: ?</div>
-        <div id="loss">loss: ?</div>
+        <div id="color">color: #e66465</div>
         <div id="label">label: ?</div>
-        <div id="status">status: ?</div>
       </div>
     </div>
   </section>
 
   <script src="./../lib/tensorflow/1.2.8/tf.min.js"></script>
-  <script src="./main.js?v=1"></script>
+  <script src="./main.js?v=2"></script>
 </body>
 </html>

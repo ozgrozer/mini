@@ -50,7 +50,7 @@ const randomRgbGenerator = () => {
 
 const showRandomColor = () => {
   const newColor = randomRgbGenerator()
-  const showColorSelector = document.getElementsByClassName('showColor')[0]
+  const showColorSelector = document.getElementById('showColor')
   showColorSelector.style.backgroundColor = rgbToHex(newColor)
   colorOnScreen = newColor
 }
@@ -131,7 +131,7 @@ const train = async () => {
     metrics: ['accuracy']
   })
 
-  const colorWillPredictSelector = document.getElementsByClassName('colorWillPredict')[0]
+  const colorWillPredictSelector = document.getElementById('colorWillPredict')
   const getColorValue = hexToRgb(colorWillPredictSelector.value)
 
   predict({
@@ -147,8 +147,14 @@ const train = async () => {
     epochs: 100,
     callbacks: {
       onEpochEnd: (epoch, logs) => {
-        document.getElementById('epoch').innerHTML = 'epoch: ' + epoch
-        document.getElementById('loss').innerHTML = 'loss: ' + logs.loss.toFixed(5)
+        const trainResultsSelector = document.getElementById('trainResults').getElementsByTagName('tbody')[0]
+        const newRow = trainResultsSelector.insertRow(0)
+        const firstCell = newRow.insertCell(0)
+        const secondCell = newRow.insertCell(1)
+        const firstCellText = document.createTextNode(epoch)
+        const secondCellText = document.createTextNode(logs.loss.toFixed(5))
+        firstCell.appendChild(firstCellText)
+        secondCell.appendChild(secondCellText)
       },
       onTrainEnd: () => {
         document.getElementById('status').innerHTML = 'status: finished'
@@ -158,12 +164,12 @@ const train = async () => {
 }
 
 const trainData = async () => {
-  const trainDataSelector = document.getElementsByClassName('trainData')[0]
+  const trainDataSelector = document.getElementById('trainData')
   trainDataSelector.addEventListener('click', function () {
     train()
   })
 
-  const trainWithExampleDataSelector = document.getElementsByClassName('trainWithExampleData')[0]
+  const trainWithExampleDataSelector = document.getElementById('trainWithExampleData')
   trainWithExampleDataSelector.addEventListener('click', async function () {
     const getJson = await window.fetch('./myColorData.json')
     const jsonData = await getJson.json()
@@ -173,8 +179,8 @@ const trainData = async () => {
 }
 
 const predictColor = () => {
-  const colorWillPredictSelector = document.getElementsByClassName('colorWillPredict')[0]
-  const selectedColorSelector = document.getElementsByClassName('selectedColor')[0]
+  const colorWillPredictSelector = document.getElementById('colorWillPredict')
+  const selectedColorSelector = document.getElementById('selectedColor')
 
   colorWillPredictSelector.addEventListener('change', function (e) {
     const getColor = e.target.value
