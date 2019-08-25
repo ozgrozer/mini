@@ -45,7 +45,15 @@ input[type='color'] {
   border: none;
   height: 150px;
   outline: none;
+  background-color: blue;
+  --webkit-appearance: none;
   border-radius: var(--border-radius);
+}
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+  border: none;
 }
 table {
   width: 100%;
