@@ -1,4 +1,4 @@
-importScripts('./../lib/js/brain.min.js')
+importScripts('./../../lib/brain/1.6.1/brain.min.js')
 
 onmessage = (e) => {
   const jsonParse = JSON.parse(e.data)
