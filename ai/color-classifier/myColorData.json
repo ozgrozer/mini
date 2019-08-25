@@ -1,0 +1,734 @@
+[
+  {
+    "r": 15,
+    "g": 155,
+    "b": 32,
+    "label": "green-ish"
+  },
+  {
+    "r": 59,
+    "g": 181,
+    "b": 254,
+    "label": "blue-ish"
+  },
+  {
+    "r": 12,
+    "g": 40,
+    "b": 176,
+    "label": "blue-ish"
+  },
+  {
+    "r": 240,
+    "g": 81,
+    "b": 125,
+    "label": "pink-ish"
+  },
+  {
+    "r": 51,
+    "g": 120,
+    "b": 127,
+    "label": "green-ish"
+  },
+  {
+    "r": 221,
+    "g": 89,
+    "b": 169,
+    "label": "pink-ish"
+  },
+  {
+    "r": 73,
+    "g": 222,
+    "b": 243,
+    "label": "blue-ish"
+  },
+  {
+    "r": 82,
+    "g": 236,
+    "b": 221,
+    "label": "green-ish"
+  },
+  {
+    "r": 6,
+    "g": 157,
+    "b": 244,
+    "label": "blue-ish"
+  },
+  {
+    "r": 232,
+    "g": 183,
+    "b": 199,
+    "label": "pink-ish"
+  },
+  {
+    "r": 5,
+    "g": 127,
+    "b": 114,
+    "label": "green-ish"
+  },
+  {
+    "r": 111,
+    "g": 121,
+    "b": 101,
+    "label": "green-ish"
+  },
+  {
+    "r": 216,
+    "g": 233,
+    "b": 87,
+    "label": "yellow-ish"
+  },
+  {
+    "r": 137,
+    "g": 204,
+    "b": 239,
+    "label": "blue-ish"
+  },
+  {
+    "r": 47,
+    "g": 40,
+    "b": 8,
+    "label": "black-ish"
+  },
+  {
+    "r": 227,
+    "g": 205,
+    "b": 41,
+    "label": "yellow-ish"
+  },
+  {
+    "r": 225,
+    "g": 208,
+    "b": 61,
+    "label": "yellow-ish"
+  },
+  {
+    "r": 88,
+    "g": 236,
+    "b": 239,
+    "label": "blue-ish"
+  },
+  {
+    "r": 193,
+    "g": 101,
+    "b": 40,
+    "label": "brown-ish"
+  },
+  {
+    "r": 127,
+    "g": 58,
+    "b": 32,
+    "label": "brown-ish"
+  },
+  {
+    "r": 0,
+    "g": 243,
+    "b": 55,
+    "label": "green-ish"
+  },
+  {
+    "r": 170,
+    "g": 21,
+    "b": 185,
+    "label": "purple-ish"
+  },
+  {
+    "r": 14,
+    "g": 229,
+    "b": 163,
+    "label": "green-ish"
+  },
+  {
+    "r": 60,
+    "g": 122,
+    "b": 179,
+    "label": "blue-ish"
+  },
+  {
+    "r": 28,
+    "g": 102,
+    "b": 146,
+    "label": "blue-ish"
+  },
+  {
+    "r": 39,
+    "g": 110,
+    "b": 77,
+    "label": "green-ish"
+  },
+  {
+    "r": 32,
+    "g": 158,
+    "b": 143,
+    "label": "green-ish"
+  },
+  {
+    "r": 245,
+    "g": 126,
+    "b": 240,
+    "label": "pink-ish"
+  },
+  {
+    "r": 253,
+    "g": 69,
+    "b": 6,
+    "label": "red-ish"
+  },
+  {
+    "r": 86,
+    "g": 82,
+    "b": 214,
+    "label": "blue-ish"
+  },
+  {
+    "r": 14,
+    "g": 3,
+    "b": 31,
+    "label": "black-ish"
+  },
+  {
+    "r": 37,
+    "g": 21,
+    "b": 15,
+    "label": "black-ish"
+  },
+  {
+    "r": 120,
+    "g": 61,
+    "b": 166,
+    "label": "purple-ish"
+  },
+  {
+    "r": 5,
+    "g": 16,
+    "b": 125,
+    "label": "blue-ish"
+  },
+  {
+    "r": 4,
+    "g": 232,
+    "b": 230,
+    "label": "blue-ish"
+  },
+  {
+    "r": 92,
+    "g": 37,
+    "b": 248,
+    "label": "blue-ish"
+  },
+  {
+    "r": 197,
+    "g": 108,
+    "b": 62,
+    "label": "brown-ish"
+  },
+  {
+    "r": 47,
+    "g": 49,
+    "b": 103,
+    "label": "black-ish"
+  },
+  {
+    "r": 120,
+    "g": 14,
+    "b": 63,
+    "label": "brown-ish"
+  },
+  {
+    "r": 107,
+    "g": 221,
+    "b": 120,
+    "label": "green-ish"
+  },
+  {
+    "r": 246,
+    "g": 34,
+    "b": 19,
+    "label": "red-ish"
+  },
+  {
+    "r": 116,
+    "g": 49,
+    "b": 237,
+    "label": "purple-ish"
+  },
+  {
+    "r": 175,
+    "g": 222,
+    "b": 20,
+    "label": "green-ish"
+  },
+  {
+    "r": 35,
+    "g": 194,
+    "b": 170,
+    "label": "green-ish"
+  },
+  {
+    "r": 33,
+    "g": 213,
+    "b": 106,
+    "label": "green-ish"
+  },
+  {
+    "r": 209,
+    "g": 33,
+    "b": 103,
+    "label": "red-ish"
+  },
+  {
+    "r": 215,
+    "g": 155,
+    "b": 30,
+    "label": "orange-ish"
+  },
+  {
+    "r": 252,
+    "g": 237,
+    "b": 179,
+    "label": "yellow-ish"
+  },
+  {
+    "r": 95,
+    "g": 51,
+    "b": 9,
+    "label": "brown-ish"
+  },
+  {
+    "r": 38,
+    "g": 4,
+    "b": 61,
+    "label": "black-ish"
+  },
+  {
+    "r": 7,
+    "g": 4,
+    "b": 181,
+    "label": "blue-ish"
+  },
+  {
+    "r": 212,
+    "g": 159,
+    "b": 63,
+    "label": "orange-ish"
+  },
+  {
+    "r": 35,
+    "g": 32,
+    "b": 166,
+    "label": "blue-ish"
+  },
+  {
+    "r": 32,
+    "g": 252,
+    "b": 164,
+    "label": "green-ish"
+  },
+  {
+    "r": 106,
+    "g": 203,
+    "b": 60,
+    "label": "green-ish"
+  },
+  {
+    "r": 133,
+    "g": 28,
+    "b": 59,
+    "label": "brown-ish"
+  },
+  {
+    "r": 126,
+    "g": 219,
+    "b": 196,
+    "label": "green-ish"
+  },
+  {
+    "r": 134,
+    "g": 174,
+    "b": 114,
+    "label": "green-ish"
+  },
+  {
+    "r": 58,
+    "g": 88,
+    "b": 14,
+    "label": "green-ish"
+  },
+  {
+    "r": 204,
+    "g": 38,
+    "b": 160,
+    "label": "purple-ish"
+  },
+  {
+    "r": 180,
+    "g": 214,
+    "b": 74,
+    "label": "green-ish"
+  },
+  {
+    "r": 250,
+    "g": 233,
+    "b": 35,
+    "label": "yellow-ish"
+  },
+  {
+    "r": 88,
+    "g": 16,
+    "b": 224,
+    "label": "purple-ish"
+  },
+  {
+    "r": 70,
+    "g": 253,
+    "b": 70,
+    "label": "green-ish"
+  },
+  {
+    "r": 247,
+    "g": 21,
+    "b": 120,
+    "label": "pink-ish"
+  },
+  {
+    "r": 9,
+    "g": 175,
+    "b": 66,
+    "label": "green-ish"
+  },
+  {
+    "r": 137,
+    "g": 182,
+    "b": 130,
+    "label": "green-ish"
+  },
+  {
+    "r": 149,
+    "g": 228,
+    "b": 130,
+    "label": "green-ish"
+  },
+  {
+    "r": 158,
+    "g": 164,
+    "b": 40,
+    "label": "green-ish"
+  },
+  {
+    "r": 116,
+    "g": 20,
+    "b": 165,
+    "label": "purple-ish"
+  },
+  {
+    "r": 240,
+    "g": 121,
+    "b": 173,
+    "label": "pink-ish"
+  },
+  {
+    "r": 89,
+    "g": 149,
+    "b": 145,
+    "label": "green-ish"
+  },
+  {
+    "r": 59,
+    "g": 220,
+    "b": 77,
+    "label": "green-ish"
+  },
+  {
+    "r": 64,
+    "g": 208,
+    "b": 118,
+    "label": "green-ish"
+  },
+  {
+    "r": 85,
+    "g": 22,
+    "b": 200,
+    "label": "purple-ish"
+  },
+  {
+    "r": 169,
+    "g": 93,
+    "b": 195,
+    "label": "purple-ish"
+  },
+  {
+    "r": 157,
+    "g": 194,
+    "b": 190,
+    "label": "green-ish"
+  },
+  {
+    "r": 82,
+    "g": 243,
+    "b": 248,
+    "label": "blue-ish"
+  },
+  {
+    "r": 133,
+    "g": 60,
+    "b": 42,
+    "label": "brown-ish"
+  },
+  {
+    "r": 127,
+    "g": 90,
+    "b": 15,
+    "label": "brown-ish"
+  },
+  {
+    "r": 29,
+    "g": 144,
+    "b": 97,
+    "label": "green-ish"
+  },
+  {
+    "r": 115,
+    "g": 4,
+    "b": 223,
+    "label": "blue-ish"
+  },
+  {
+    "r": 58,
+    "g": 215,
+    "b": 224,
+    "label": "blue-ish"
+  },
+  {
+    "r": 58,
+    "g": 43,
+    "b": 69,
+    "label": "black-ish"
+  },
+  {
+    "r": 84,
+    "g": 151,
+    "b": 13,
+    "label": "green-ish"
+  },
+  {
+    "r": 227,
+    "g": 180,
+    "b": 90,
+    "label": "orange-ish"
+  },
+  {
+    "r": 228,
+    "g": 221,
+    "b": 232,
+    "label": "gray-ish"
+  },
+  {
+    "r": 141,
+    "g": 69,
+    "b": 177,
+    "label": "purple-ish"
+  },
+  {
+    "r": 123,
+    "g": 224,
+    "b": 232,
+    "label": "blue-ish"
+  },
+  {
+    "r": 5,
+    "g": 91,
+    "b": 102,
+    "label": "green-ish"
+  },
+  {
+    "r": 238,
+    "g": 192,
+    "b": 250,
+    "label": "pink-ish"
+  },
+  {
+    "r": 250,
+    "g": 224,
+    "b": 53,
+    "label": "orange-ish"
+  },
+  {
+    "r": 45,
+    "g": 82,
+    "b": 222,
+    "label": "blue-ish"
+  },
+  {
+    "r": 116,
+    "g": 45,
+    "b": 145,
+    "label": "purple-ish"
+  },
+  {
+    "r": 254,
+    "g": 89,
+    "b": 9,
+    "label": "red-ish"
+  },
+  {
+    "r": 98,
+    "g": 201,
+    "b": 239,
+    "label": "blue-ish"
+  },
+  {
+    "r": 61,
+    "g": 177,
+    "b": 159,
+    "label": "green-ish"
+  },
+  {
+    "r": 241,
+    "g": 76,
+    "b": 96,
+    "label": "red-ish"
+  },
+  {
+    "r": 35,
+    "g": 212,
+    "b": 10,
+    "label": "green-ish"
+  },
+  {
+    "r": 138,
+    "g": 183,
+    "b": 94,
+    "label": "green-ish"
+  },
+  {
+    "r": 98,
+    "g": 251,
+    "b": 153,
+    "label": "green-ish"
+  },
+  {
+    "r": 66,
+    "g": 167,
+    "b": 131,
+    "label": "green-ish"
+  },
+  {
+    "r": 241,
+    "g": 122,
+    "b": 239,
+    "label": "pink-ish"
+  },
+  {
+    "r": 249,
+    "g": 138,
+    "b": 52,
+    "label": "orange-ish"
+  },
+  {
+    "r": 147,
+    "g": 233,
+    "b": 33,
+    "label": "green-ish"
+  },
+  {
+    "r": 39,
+    "g": 144,
+    "b": 22,
+    "label": "green-ish"
+  },
+  {
+    "r": 52,
+    "g": 9,
+    "b": 193,
+    "label": "blue-ish"
+  },
+  {
+    "r": 41,
+    "g": 148,
+    "b": 42,
+    "label": "green-ish"
+  },
+  {
+    "r": 52,
+    "g": 13,
+    "b": 84,
+    "label": "black-ish"
+  },
+  {
+    "r": 29,
+    "g": 0,
+    "b": 230,
+    "label": "blue-ish"
+  },
+  {
+    "r": 210,
+    "g": 130,
+    "b": 169,
+    "label": "pink-ish"
+  },
+  {
+    "r": 27,
+    "g": 135,
+    "b": 206,
+    "label": "blue-ish"
+  },
+  {
+    "r": 60,
+    "g": 217,
+    "b": 58,
+    "label": "green-ish"
+  },
+  {
+    "r": 94,
+    "g": 196,
+    "b": 169,
+    "label": "green-ish"
+  },
+  {
+    "r": 38,
+    "g": 234,
+    "b": 14,
+    "label": "green-ish"
+  },
+  {
+    "r": 53,
+    "g": 210,
+    "b": 96,
+    "label": "green-ish"
+  },
+  {
+    "r": 155,
+    "g": 226,
+    "b": 222,
+    "label": "blue-ish"
+  },
+  {
+    "r": 165,
+    "g": 207,
+    "b": 109,
+    "label": "green-ish"
+  },
+  {
+    "r": 62,
+    "g": 53,
+    "b": 220,
+    "label": "blue-ish"
+  },
+  {
+    "r": 47,
+    "g": 71,
+    "b": 91,
+    "label": "black-ish"
+  },
+  {
+    "r": 52,
+    "g": 173,
+    "b": 146,
+    "label": "green-ish"
+  },
+  {
+    "r": 78,
+    "g": 34,
+    "b": 186,
+    "label": "blue-ish"
+  }
+]

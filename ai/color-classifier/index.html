@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>color classifier</title>
+  <link rel="stylesheet" href="./style.css?v=1" />
+</head>
+<body>
+  <section>
+    <div class="sectionTitle">1. Classify</div>
+
+    <div class="sectionContent">
+      <div class="showColor"></div>
+
+      <div class="classifyColors">
+        <div class="classifyButtonWrapper">
+          <button class="classifyButton crb skip">
+            Skip
+          </button>
+        </div>
+        <div class="classifyButtonWrapper">
+          <button
+            data-color="red-ish"
+            class="classifyButton"
+            style="background-color: red;">
+            Red-ish
+          </button>
+          <button
+            data-color="pink-ish"
+            class="classifyButton"
+            style="background-color: pink; color: black;">
+            Pink-ish
+          </button>
+        </div>
+        <div class="classifyButtonWrapper">
+          <button
+            data-color="orange-ish"
+            class="classifyButton"
+            style="background-color: orange; color: black;">
+            Orange-ish
+          </button>
+          <button
+            data-color="yellow-ish"
+            class="classifyButton"
+            style="background-color: yellow; color: black;">
+            Yellow-ish
+          </button>
+        </div>
+        <div class="classifyButtonWrapper">
+          <button
+            data-color="purple-ish"
+            class="classifyButton"
+            style="background-color: purple;">
+            Purple-ish
+          </button>
+          <button
+            data-color="green-ish"
+            class="classifyButton"
+            style="background-color: green;">
+            Green-ish
+          </button>
+        </div>
+        <div class="classifyButtonWrapper">
+          <button
+            data-color="blue-ish"
+            class="classifyButton"
+            style="background-color: blue;">
+            Blue-ish
+          </button>
+          <button
+            data-color="brown-ish"
+            class="classifyButton"
+            style="background-color: brown;">
+            Brown-ish
+          </button>
+        </div>
+        <div class="classifyButtonWrapper">
+          <button
+            data-color="gray-ish"
+            class="classifyButton"
+            style="background-color: gray;">
+            Gray-ish
+          </button>
+          <button
+            data-color="black-ish"
+            class="classifyButton"
+            style="background-color: black;">
+            Black-ish
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sectionTitle">2. Train</div>
+
+    <div class="sectionContent">
+      <div>
+        <button class="trainData crb">
+          Train
+        </button>
+      </div>
+
+      <div>
+        <button class="trainWithExampleData crb mt-10">
+          Train with Example Data
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sectionTitle">3. Predict</div>
+
+    <div class="sectionContent">
+      <input
+        type="color"
+        value="#e66465"
+        class="colorWillPredict" />
+
+      <div class="selectedColor mt-20">#e66465</div>
+
+      <div class="mt-20">
+        <div id="epoch">epoch: ?</div>
+        <div id="loss">loss: ?</div>
+        <div id="label">label: ?</div>
+        <div id="status">status: ?</div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./../lib/tensorflow/1.2.8/tf.min.js"></script>
+  <script src="./main.js?v=1"></script>
+</body>
+</html>
