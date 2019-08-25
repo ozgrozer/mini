@@ -68,10 +68,21 @@ const classifyColors = () => {
         label: getColor
       }
       collectedColors.push(colorDetails)
-    }
-    showRandomColor()
 
-    console.log(collectedColors)
+      const selectedColorsSelector = document.getElementById('selectedColors').getElementsByTagName('tbody')[0]
+      if (collectedColors.length < 2) selectedColorsSelector.innerHTML = ''
+      const newRow = selectedColorsSelector.insertRow(0)
+
+      const colorCell = document.createElement('div')
+      const cssRgb = colorOnScreen.r + ', ' + colorOnScreen.g + ', ' + colorOnScreen.b
+      colorCell.style.backgroundColor = 'rgb(' + cssRgb + ')'
+
+      newRow.insertCell(0).appendChild(document.createTextNode(collectedColors.length))
+      newRow.insertCell(1).appendChild(colorCell)
+      newRow.insertCell(2).appendChild(document.createTextNode(getColor))
+    }
+
+    showRandomColor()
   }
 
   for (let i = 0; i < classifyButtonSelector.length; i++) {
@@ -177,6 +188,24 @@ const trainData = async () => {
     const getJson = await window.fetch('./myColorData.json')
     const jsonData = await getJson.json()
     collectedColors = jsonData
+
+    const selectedColorsSelector = document.getElementById('selectedColors').getElementsByTagName('tbody')[0]
+    selectedColorsSelector.innerHTML = ''
+
+    for (let i = 0; i < collectedColors.length; i++) {
+      const collectedColor = collectedColors[i]
+
+      const newRow = selectedColorsSelector.insertRow(0)
+
+      const colorCell = document.createElement('div')
+      const cssRgb = collectedColor.r + ', ' + collectedColor.g + ', ' + collectedColor.b
+      colorCell.style.backgroundColor = 'rgb(' + cssRgb + ')'
+
+      newRow.insertCell(0).appendChild(document.createTextNode(i + 1))
+      newRow.insertCell(1).appendChild(colorCell)
+      newRow.insertCell(2).appendChild(document.createTextNode(collectedColor.label))
+    }
+
     train()
   })
 }
