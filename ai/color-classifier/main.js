@@ -136,13 +136,15 @@ const train = async () => {
 
   trained = true
 
+  const trainResultsSelector = document.getElementById('trainResults').getElementsByTagName('tbody')[0]
+  trainResultsSelector.innerHTML = ''
+
   await model.fit(xs, ys, {
     shuffle: true,
     validationSplit: 0.1,
     epochs: 100,
     callbacks: {
       onEpochEnd: (epoch, logs) => {
-        const trainResultsSelector = document.getElementById('trainResults').getElementsByTagName('tbody')[0]
         const newRow = trainResultsSelector.insertRow(0)
         const firstCell = newRow.insertCell(0)
         const secondCell = newRow.insertCell(1)
