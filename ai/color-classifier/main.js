@@ -122,7 +122,7 @@ const train = async () => {
 
   model = tf.sequential()
   const hidden = tf.layers.dense({
-    units: 100,
+    units: parseInt(document.getElementById('trainHiddenLayers').value),
     inputShape: [3],
     activation: 'sigmoid'
   })
@@ -133,7 +133,7 @@ const train = async () => {
   model.add(hidden)
   model.add(output)
 
-  const learningRate = 0.9
+  const learningRate = parseFloat(document.getElementById('trainLearningRate').value)
   const optimizer = tf.train.sgd(learningRate)
 
   model.compile({
@@ -152,8 +152,8 @@ const train = async () => {
 
   await model.fit(xs, ys, {
     shuffle: true,
-    validationSplit: 0.1,
-    epochs: 100,
+    validationSplit: parseFloat(document.getElementById('trainValidationSplit').value),
+    epochs: parseInt(document.getElementById('trainEpoch').value),
     callbacks: {
       onEpochEnd: (epoch, logs) => {
         const newRow = trainResultsSelector.insertRow(0)

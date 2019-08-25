@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>color classifier</title>
-  <link rel="stylesheet" href="./style.css?v=6" />
+  <link rel="stylesheet" href="./style.css?v=7" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 </head>
 <body>
@@ -118,6 +118,56 @@
     <div class="sectionTitle">2. Train</div>
 
     <div class="sectionContent">
+      <div class="field">
+        <label for="trainEpoch">
+          Epoch
+        </label>
+        <br />
+        <input
+          type="text"
+          value="200"
+          class="mt-5"
+          id="trainEpoch" />
+      </div>
+
+      <div class="field mt-10">
+        <label for="trainHiddenLayers">
+          Hidden Layers
+        </label>
+        <br />
+        <input
+          type="text"
+          value="100"
+          class="mt-5"
+          id="trainHiddenLayers" />
+      </div>
+
+      <div class="field mt-10">
+        <label for="trainValidationSplit">
+          Validation Split
+        </label>
+        <br />
+        <input
+          type="text"
+          value="0.1"
+          class="mt-5"
+          id="trainValidationSplit" />
+      </div>
+
+      <div class="field mt-10">
+        <label for="trainLearningRate">
+          Learning Rate
+        </label>
+        <br />
+        <input
+          type="text"
+          value="0.9"
+          class="mt-5"
+          id="trainLearningRate" />
+      </div>
+    </div>
+
+    <div class="sectionContent">
       <div>
         <button
           class="crb"
@@ -171,6 +221,6 @@
   </section>
 
   <script src="./../lib/tensorflow/1.2.8/tf.min.js"></script>
-  <script src="./main.js?v=6"></script>
+  <script src="./main.js?v=7"></script>
 </body>
 </html>

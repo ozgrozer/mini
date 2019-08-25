@@ -18,19 +18,34 @@ html, body {
 }
 button {
   color: #fff;
-  border: none;
   outline: none;
   cursor: pointer;
   font-size: 16px;
   user-select: none;
   line-height: 24px;
   padding: 6px 12px;
-  border-radius: 4px;
   display: inline-block;
+  border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
 }
 button.crb {
   color: #000;
+}
+input[type='text'] {
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 6px 12px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+}
+input[type='color'] {
+  padding: 0;
+  width: 150px;
+  border: none;
+  height: 150px;
+  outline: none;
+  border-radius: var(--border-radius);
 }
 table {
   width: 100%;
@@ -47,6 +62,7 @@ th, td {
   text-align: left;
 }
 
+.mt-5 { margin-top: 5px; }
 .mt-10 { margin-top: 10px; }
 .mt-20 { margin-top: 20px; }
 .mt-40 { margin-top: 40px; }
