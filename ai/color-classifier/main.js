@@ -134,11 +134,6 @@ const train = async () => {
   const colorWillPredictSelector = document.getElementById('colorWillPredict')
   const getColorValue = hexToRgb(colorWillPredictSelector.value)
 
-  predict({
-    r: getColorValue.r,
-    g: getColorValue.g,
-    b: getColorValue.b
-  })
   trained = true
 
   await model.fit(xs, ys, {
@@ -155,9 +150,15 @@ const train = async () => {
         const secondCellText = document.createTextNode(logs.loss.toFixed(5))
         firstCell.appendChild(firstCellText)
         secondCell.appendChild(secondCellText)
+
+        predict({
+          r: getColorValue.r,
+          g: getColorValue.g,
+          b: getColorValue.b
+        })
       },
       onTrainEnd: () => {
-        document.getElementById('status').innerHTML = 'status: finished'
+        console.log('train finished')
       }
     }
   })
