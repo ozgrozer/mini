@@ -159,7 +159,7 @@ const train = async () => {
         const newRow = trainResultsSelector.insertRow(0)
         const firstCell = newRow.insertCell(0)
         const secondCell = newRow.insertCell(1)
-        const firstCellText = document.createTextNode(epoch)
+        const firstCellText = document.createTextNode(epoch + 1)
         const secondCellText = document.createTextNode(logs.loss.toFixed(5))
         firstCell.appendChild(firstCellText)
         secondCell.appendChild(secondCellText)
